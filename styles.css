@@ -1,3 +1,23 @@
+.books{
+  background-color: green;
+}
+
+figure {
+  display: inline-block;
+  margin: 20px; /* adjust as needed */
+  background-color: palegoldenrod;
+  border: 2px solid black;
+}
+
+figure img {
+  height: 200px;
+  width: 200px;
+}
+figure figcaption {
+  text-align: center;
+}
+
+/*
 img {
     transition: transform .7s ease-in-out;
   }
@@ -7,10 +27,11 @@ img:hover {
   }
 
 .row {
-    display: flex;
-    padding: 10px;
-    margin: 10px;
-    border: 2px dashed green;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  border: 2px dashed green;
+  border: 20px dashed magenta;
 }
 
 .bookcover {
@@ -26,3 +47,4 @@ img:hover {
   display: block;
   
 }
+*/
