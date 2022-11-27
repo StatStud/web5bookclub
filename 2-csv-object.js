@@ -34,21 +34,33 @@ window.onload = () => {
 
         //console.log(data['title']);
 
+        // console.log(`here is the first title: ${data['title'][0]}`);
+        // console.log(`here is the first author: ${data['author'][0]}`);
+        // console.log(`here is the last title: ${data['title'][11]}`);
+        // console.log(`here is the last title: ${data['author'][11]}`);
         tmp_array = data['title'];
         console.log(tmp_array);
 
         for (let i=0; i<tmp_array.length;i++){
-          list_html += `<li> ${tmp_array[i]} </li>`;
+          list_html += `
+          <figure>
+          <img src=${data['cover'][i]} class="bookcover">
+          <figcaption class="caption">
+              <strong> ${data['title'][i]} </strong>
+              <br>By <i> ${data['author'][i]} </i></br>
+          </figcaption>
+          </figure>
+          `;
         }
 
-        final_html = `
-        <h2> Here are some of the authors that I have read </h2>
-        <ol>
-        ${list_html}
-        </ol>
-        `;
+        // final_html = `
+        // <h2> Here are some of the authors that I have read </h2>
+        // <ol>
+        // ${list_html}
+        // </ol>
+        // `;
 
-        document.querySelector("main").innerHTML = final_html;
+        document.querySelector("#bookbox").innerHTML = list_html;
 
         // for (title in data['title']){
         //   console.log(title)
