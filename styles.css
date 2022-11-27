@@ -1,0 +1,28 @@
+img {
+    transition: transform .7s ease-in-out;
+  }
+
+img:hover {
+    transform: scale(1.2, 1.2);
+  }
+
+.row {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border: 2px dashed green;
+}
+
+.bookcover {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+    background-color: blueviolet;
+
+}
+
+.caption {
+  display: block;
+  
+}
