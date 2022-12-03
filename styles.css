@@ -9,45 +9,23 @@ figure {
   margin: 20px; /* adjust as needed */
   background-color: palegoldenrod;
   border: 2px solid black;
+  word-wrap: break-word;
+  transition: transform .7s ease-in-out;
+}
+
+figure:hover {
+  transform: scale(2);
 }
 
 figure img {
   height: 200px;
   width: 200px;
 }
+
+
 figure figcaption {
   text-align: center;
-  overflow-wrap: break-word;
+  display: table-caption;
+  caption-side:bottom;
+  width: 200px;
 }
-
-/*
-img {
-    transition: transform .7s ease-in-out;
-  }
-
-img:hover {
-    transform: scale(1.2, 1.2);
-  }
-
-.row {
-  display: flex;
-  padding: 10px;
-  margin: 10px;
-  border: 2px dashed green;
-  border: 20px dashed magenta;
-}
-
-.bookcover {
-    height: 250px;
-    width: 100%;
-    object-fit: contain;
-    padding: 10px;
-    background-color: blueviolet;
-
-}
-
-.caption {
-  display: block;
-  
-}
-*/
